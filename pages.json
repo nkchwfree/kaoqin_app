@@ -68,10 +68,10 @@
             
         }
         ,{
-            "path" : "pages/chuchai/chuchai",
+            "path" : "pages/jiaban/jiaban",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "出差",
+                "navigationBarTitleText": "加班申请",
                 "enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#00a0e9"
             }
@@ -111,7 +111,7 @@
             "path" : "pages/vacation/vacation",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "请假",
+                "navigationBarTitleText": "请假申请",
                 "enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#00a0e9"
             }
@@ -137,6 +137,16 @@
             }
             
         }
+        ,{
+            "path" : "pages/buka/buka",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "补卡申请",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#00a0e9"
+            }
+            
+        }
     ],
 	"tabBar": {
 	    "color": "#7A7E83",
@@ -148,11 +158,6 @@
         "iconWidth": "24px",
         "spacing": "3px",
 	    "list": [{
-	        "pagePath": "pages/index/index",
-	        "iconPath": "static/img/location1.png",
-	        "selectedIconPath": "static/img/location_check.png",
-	        "text": "打卡"
-	    }, {
 	        "pagePath": "pages/work/work",
 	        "iconPath": "static/img/work.png",
 	        "selectedIconPath": "static/img/work_check.png",
@@ -162,6 +167,11 @@
 	        "iconPath": "static/img/search.png",
 	        "selectedIconPath": "static/img/search_check.png",
 	        "text": "记录查询"
+	    }, {
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/img/location1.png",
+	        "selectedIconPath": "static/img/location_check.png",
+	        "text": "个人中心"
 	    }]
 	},
 	"globalStyle": {

@@ -22,37 +22,47 @@ export default {
 	data() {
 	  return {
 		lists: [{
-			title:'打 卡',
-			openType:'switchTab',
-			routerPath:'../index/index',
-			imgPath: '../../static/location_t.png'
-		},{
 			title:'请 假',
 			openType:'navigate',
 			routerPath:'../vacation/vacation',
 			imgPath: '../../static/qingjia.png'
 		},{
-			title:'出 差',
+			title:'加 班',
 			openType:'navigate',
-			routerPath:'../chuchai/chuchai',
+			routerPath:'../jiaban/jiaban',
 			imgPath: '../../static/chucha.png'
 		},{
-			title:'外 出',
+			title:'补 卡',
 			openType:'navigate',
-			routerPath:'../goOut/goOut',
-			imgPath: '../../static/waichu.png'
+			routerPath:'../buka/buka',
+			imgPath: '../../static/location_t.png'
 		},{
 			title:'审批管理',
 			openType:'navigate',
 			routerPath:'../approval/approval',
 			imgPath: '../../static/approved.png'
 		},{
-			title:'绩效管理',
+			title:'假期余额',
 			openType:'navigate',
 			routerPath:'../achievements/achievements',
 			imgPath: '../../static/jixiao.png'
 		},{
-			title:'记录查询',
+			title:'排班信息',
+			openType:'navigate',
+			routerPath:'../goOut/goOut',
+			imgPath: '../../static/waichu.png'
+		},{
+			title:'工资单',
+			openType:'switchTab',
+			routerPath:'../record/record',
+			imgPath: '../../static/search_t.png'
+		},{
+			title:'今日提醒',
+			openType:'switchTab',
+			routerPath:'../record/record',
+			imgPath: '../../static/search_t.png'
+		},{
+			title:'修改密码',
 			openType:'switchTab',
 			routerPath:'../record/record',
 			imgPath: '../../static/search_t.png'

@@ -23,15 +23,19 @@
 		
 		<view class="" v-if="!item.type">
 			<view class="nav_title">
-				<text>navyvy_c提交的出差申请</text>
+				<text>navyvy_c提交的补卡申请</text>
 			</view>
 			<view class="nav_type">
-				<text>出差事由：</text>
-				<text>项目交付</text>
+				<text>缺卡事由：</text>
+				<text>忘记打卡</text>
+			</view>
+			<view class="nav_type">
+				<text>缺卡类别：</text>
+				<text>上班缺卡</text>
 			</view>
 			<view class="nav_time">
-				<text>出差时间：</text>
-				<text>2020/06/05</text>-<text>2020/06/09</text>
+				<text>补卡时间：</text>
+				<text>2020/06/05 17:00:00</text></text>
 			</view>
 			<view class="nav_time_length">
 				<text>出差时长：</text>

@@ -32,13 +32,12 @@
 				<text class="big_time">{{item.time}}</text>
 				<view class="dataList" v-for="(a,i) in item.list" :key="i">
 					<view class="dataListRight">
-						<view class="dataListTime">{{a.starTime}}-{{a.endTime}}</view>
+						<view class="dataListTime">{{a.starTime}}</view>
 						<view class="line">|</view>
 					</view>
 					
 					<view class="dataListLeft">
-						<uni-tag v-if="a.state === 0" text="往返" inverted style='background-color: #e6f4fb;' type="success" size='small'></uni-tag>
-						<uni-tag v-else text="单程" type="primary" inverted style='background-color: #e6f4fb;' size='small'></uni-tag>
+						<uni-tag :text="a.duration + ' 小时'" inverted style='background-color: #e6f4fb;width:100upx; text-align: center;' type="success" size='small'></uni-tag>
 						
 						<uni-tag v-show="a.state === 0" text="已通过" type="success" size='small'></uni-tag>
 						<uni-tag v-show="a.state === 1" text="待审核" type="primary" size='small'></uni-tag>
@@ -116,26 +115,31 @@
 						starTime:"05月01日",
 						endTime:"05月03日",
 						state:0,
+						duration:1
 					},{
 						title:"病假",
 						starTime:"05月11日",
 						endTime:"05月13日",
 						state:1,
+						duration:0.5
+					},{
+						title:"病假",
+						starTime:"05月01日",
+						endTime:"05月31日",
+						state:1,
+						duration:2
 					},{
 						title:"病假",
 						starTime:"05月01日",
 						endTime:"05月31日",
 						state:2,
+						duration:1.5
 					},{
 						title:"病假",
 						starTime:"05月01日",
 						endTime:"05月31日",
-						state:3,
-					},{
-						title:"病假",
-						starTime:"05月01日",
-						endTime:"05月31日",
-						state:4,
+						state:2,
+						duration:2.5
 					}]
 				},
 				{
@@ -145,16 +149,19 @@
 						starTime:"04月01日",
 						endTime:"04月03日",
 						state:1,
+						duration:0.5,
 					},{
 						title:"病假",
 						starTime:"04月11日",
 						endTime:"04月13日",
 						state:1,
+						duration:0.5,
 					},{
 						title:"事假",
 						starTime:"04月01日",
 						endTime:"04月31日",
 						state:1,
+						duration:0.5,
 					}]
 				},{
 					time: "2021年03月",
@@ -163,16 +170,19 @@
 						starTime:"03月01日",
 						endTime:"03月03日",
 						state:0,
+						duration:0.5,
 					},{
 						title:"病假",
 						starTime:"03月11日",
 						endTime:"03月13日",
 						state:4,
+						duration:0.5,
 					},{
 						title:"事假",
 						starTime:"03月01日",
 						endTime:"03月31日",
 						state:2,
+						duration:0.5,
 					}]
 				},],
 				
@@ -422,13 +432,13 @@
 		justify-content: space-between;
 		align-items: center;
 		flex: 1;
-		margin-right: 50upx;
+		margin-right: 80upx;
 	}
 	.dataListLeft {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 300upx;
+		width: 400upx;
 	}
 	
 	

@@ -15,8 +15,8 @@
 				</view>
 				
 				<view class="achievement">
-					<text class="t1" >昨日收入 : {{achievement.money}} 元</text>
-					<text class="t1" >收入排名 : {{achievement.num}} </text>
+					<text class="t1" ><!-- 昨日收入 : {{achievement.money}} 元 --></text>
+					<text class="t1" ><!-- 收入排名 : {{achievement.num}} --></text>
 				</view>
 			</view>
 		</view>
@@ -31,7 +31,7 @@
 				moduleTitle: '上班打卡',
 				Timer:[{time:"09:00",},{time:"18:00"}],	//上下班时间
 				achievement:{money:"888.88",num:"1"},			//业绩	
-				organize:'R &amp D department',							//考情组		
+				organize:'装配车间',							//考情组		
 			};
 		}
 	}

@@ -56,22 +56,26 @@
 		data() {
 			return {
 				current: 0,
+				index:0,
 				tabs: [
 					{name: '待处理'},
 					{name: '已处理'}
 				],
 				questionType:[{
-					title:"出差",
-					num:"10"
-				},{
 					title:"请假",
 					num:"10"
 				},{
-					title:"外出",
+					title:"补卡",
+					num:"10"
+				},{
+					title:"加班",
 					num:"8"
 				},{
-					title:"打卡异常",
-					num:"18"
+					title:"入职申请",
+					num:"2"
+				},{
+					title:"离职申请",
+					num:"0"
 				},]
 				
 				
